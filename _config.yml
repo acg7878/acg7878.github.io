@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: DRink
 subtitle: ''
-description: ''
+description: 忙忙忙忙'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: DRink
+language: zh-CN # 语言
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: solitude
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -104,3 +104,9 @@ deploy:
   type: git
   repo: https://github.com/acg7878/acg7878.github.io
   branch: master
+
+algolia:
+  applicationID: 'V2EHR27JA3'
+  apiKey: '80db0a5f7d306e243c9bafbefed36cca'
+  adminApiKey: '6920444486da0dc69200dc2c60653948' 
+  indexName: 'hexo'
