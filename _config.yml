@@ -102,7 +102,7 @@ theme: solitude
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/acg7878/acg7878.github.io
+  repo: git@github.com:acg7878/acg7878.github.io.git
   branch: master
 
 algolia:
