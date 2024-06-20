@@ -102,7 +102,7 @@ theme: solitude
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/acg7878/acg7878.github.io
+  repo: git@github.com:acg7878/acg7878.github.io.git
   branch: master
 
 algolia:
@@ -110,6 +110,7 @@ algolia:
   apiKey: '80db0a5f7d306e243c9bafbefed36cca'
   adminApiKey: '6920444486da0dc69200dc2c60653948' 
   indexName: 'hexo'
+
 
 
 
