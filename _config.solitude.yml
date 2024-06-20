@@ -39,25 +39,38 @@ nav:
   group:
   # 项目: # 分类名称
   #   Solitude: https://github.com/everfu/hexo-theme-solitude || /img/pwa/favicon.ico # 子菜单名称(submenu name): 链接地址(address) || 图标(icon)
-
+    导航:
+      归档: /archives/
+      分类: /categories/
+      标签: /tags/
+    服务:
+      阿里云: https://aliyun.com/
+      51la统计: https://v6.51.la/
+      百度统计: https://tongji.baidu.com/
+    支持:
+      打赏记录: /about/
+    协议:
+      Cookies: /cookies/
+      用户协议: /privacy/
+      版权协议: /copyright/
   # 中心菜单
   # center menu
   menu:
-  # 首页: / # 显示名称：路径 / Display name: path
-  # 文库: # 显示名称 / Display name
-  #   文章列表: /archives/ || st-folder-fill # 子菜单名称：路径 || 图标 / Submenu name: path || icon
-  #   全部分类: /categories/ || st-checkbox-multiple-blank-fill
-  #   全部标签: /tags/ || st-price-tag-fill
-  # 友链:
-  #   友链鱼塘: /moments/ || st-wifi-fill
-  #   友情链接: /links/ || st-group-fill
-  #   宝藏博主: javascript:travelling() || st-gift-fill
-  # 我的:
-  #   装备: /equipment/ || st-laptop-line
-  #   工具箱: /tlink/ || st-tools-fill
-  #   音乐馆: /music/ || st-disc-fill
-  # 关于:
-  #   关于本站: /about/ || st-contacts-fill
+    首页: / # 显示名称：路径 / Display name: path
+    文库: # 显示名称 / Display name
+      文章列表: /archives/ || st-folder-fill # 子菜单名称：路径 || 图标 / Submenu name: path || icon
+      全部分类: /categories/ || st-checkbox-multiple-blank-fill
+      全部标签: /tags/ || st-price-tag-fill
+    友链:
+      友链鱼塘: /moments/ || st-wifi-fill
+      友情链接: /links/ || st-group-fill
+      宝藏博主: javascript:travelling() || st-gift-fill
+    我的:
+      装备: /equipment/ || st-laptop-line
+      工具箱: /tlink/ || st-tools-fill
+      音乐馆: /music/ || st-disc-fill
+    关于:
+      关于本站: /about/ || st-contacts-fill
 
   # 右侧按钮
   # Button on the right
@@ -115,9 +128,9 @@ hometop:
   # 左下跳转按钮
   # Banner lower left jump button
   group:
-  # 热门: /tags/热门/ || st-fire-fill || linear-gradient(to right,#f65,#ffbf37)
-  # 教程: /tags/教程/ || st-book-mark-fill || linear-gradient(to right,#358bff,#15c6ff)
-  # 精选: /tags/精选/ || st-star-smile-fill || linear-gradient(to right,#18e7ae,#1eebeb)
+    # 热门: /tags/热门/ || st-fire-fill || linear-gradient(to right,#f65,#ffbf37)
+    # 教程: /tags/教程/ || st-book-mark-fill || linear-gradient(to right,#358bff,#15c6ff)
+    # 精选: /tags/精选/ || st-star-smile-fill || linear-gradient(to right,#18e7ae,#1eebeb)
 
   # 右侧置顶列表（在文章的front matter中添加“recommend: true”）
   # Right top list (add "recommend: true" in the front matter of the article)
@@ -978,3 +991,39 @@ CDN:
     # swiper_js:
     # busuanzi_js:
     # snackbar_js:
+
+
+
+#markdown
+markdown:
+  preset: 'default'
+  render:
+    html: true
+    xhtmlOut: false
+    langPrefix: 'language-'
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  enable_rules:
+  disable_rules:
+  plugins:
+    +    - '@renbaoshuo/markdown-it-katex'
+  anchors:
+    level: 2
+    collisionSuffix: ''
+    permalink: true
+    permalinkClass: 'headerlink'
+    permalinkSide: 'left'
+    permalinkSymbol: ''
+    case: 0
+    separator: '-'
+  images:
+    lazyload: true
+    prepend_root: false
+    post_asset: false
+  inline: false
+  katex:
+    enable: true
+    per_page: true # 是否在每页都加载 / Whether to load on each page
+    copytex: true # 是否开启复制公式 / Whether to enable copy formula

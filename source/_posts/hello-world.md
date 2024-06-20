@@ -7,8 +7,11 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ### Create a new post
 
-``` bash
-$ hexo new "My New Post"
+``` C++
+int main(){
+	if(a==1)
+		return 1;
+}
 ```
 
 More info: [Writing](https://hexo.io/docs/writing.html)
