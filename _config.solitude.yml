@@ -61,10 +61,6 @@ nav:
       文章列表: /archives/ || st-folder-fill # 子菜单名称：路径 || 图标 / Submenu name: path || icon
       全部分类: /categories/ || st-checkbox-multiple-blank-fill
       全部标签: /tags/ || st-price-tag-fill
-    友链:
-      友链鱼塘: /moments/ || st-wifi-fill
-      友情链接: /links/ || st-group-fill
-      宝藏博主: javascript:travelling() || st-gift-fill
     我的:
       装备: /equipment/ || st-laptop-line
       工具箱: /tlink/ || st-tools-fill
@@ -716,7 +712,7 @@ busuanzi_use: 0 # 0: 原版 / 1: 青秸(other: 其它自定義的busuanzi平台)
 search:
   enable: true
   # algolia, local
-  type: local
+  type: algolia
   # 推荐标签
   # Recommended tags
   tags:
