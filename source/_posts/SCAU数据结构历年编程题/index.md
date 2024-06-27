@@ -2,6 +2,7 @@
 title: SCAU数据结构历年编程题
 categories: 
     - 数据结构
+cover: "https://raw.githubusercontent.com/acg7878/hexo_picture/master/blog/SCAU数据结构历年编程题/2024-06-27.jpg"
 ---
 ## 2016
 

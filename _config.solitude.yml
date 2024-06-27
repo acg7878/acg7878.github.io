@@ -189,7 +189,7 @@ aside:
     author:
       # 头像
       # Avatar
-      img: /img/touxiang.jpg
+      img: https://raw.githubusercontent.com/acg7878/hexo_picture/master/blog/about/touxiang.jpg
       # 表情图片链接
       # Emoticon image link
       # tip: 26x26 size
@@ -660,10 +660,16 @@ highlight:
   expand: true # 是否默认展开 / Whether to expand by default
   # 代码块样式
   # Code block style
-  theme: default # default: 默认 / mac : apple terminal
+  theme: mac # default: 默认 / mac : apple terminal
   # 代码配色
   # Code color
   color: default # default: 默认  / solidity: solidity / dracula: dracula
+
+syntax_highlighter: prismjs
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
 # 图片灯箱
 # image lightbox
@@ -857,11 +863,11 @@ css_prefix: false
 
 # Font 字体
 # Font
-font:
+font: 
   font-size: 16px
   code-font-size: 16px
   font-family: "PingFang SC,Hiragino Sans GB,Microsoft YaHei"
-  code-font-family: "monospace, monospace"
+  code-font-family: "PingFang SC"
 
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 # Insert code before </head> and before </body>
@@ -990,36 +996,4 @@ CDN:
 
 
 
-#markdown
-markdown:
-  preset: 'default'
-  render:
-    html: true
-    xhtmlOut: false
-    langPrefix: 'language-'
-    breaks: true
-    linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  enable_rules:
-  disable_rules:
-  plugins:
-    +    - '@renbaoshuo/markdown-it-katex'
-  anchors:
-    level: 2
-    collisionSuffix: ''
-    permalink: true
-    permalinkClass: 'headerlink'
-    permalinkSide: 'left'
-    permalinkSymbol: ''
-    case: 0
-    separator: '-'
-  images:
-    lazyload: true
-    prepend_root: false
-    post_asset: false
-  inline: false
-  katex:
-    enable: true
-    per_page: true # 是否在每页都加载 / Whether to load on each page
-    copytex: true # 是否开启复制公式 / Whether to enable copy formula
+
