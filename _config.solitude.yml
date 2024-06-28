@@ -61,10 +61,10 @@ nav:
       文章列表: /archives/ || st-folder-fill # 子菜单名称：路径 || 图标 / Submenu name: path || icon
       全部分类: /categories/ || st-checkbox-multiple-blank-fill
       全部标签: /tags/ || st-price-tag-fill
-    我的:
-      装备: /equipment/ || st-laptop-line
-      工具箱: /tlink/ || st-tools-fill
-      音乐馆: /music/ || st-disc-fill
+    # 我的:
+    #   装备: /equipment/ || st-laptop-line
+    #   工具箱: /tlink/ || st-tools-fill
+    #   音乐馆: /music/ || st-disc-fill
     关于:
       关于本站: /about/ || st-contacts-fill
 
@@ -665,11 +665,11 @@ highlight:
   # Code color
   color: default # default: 默认  / solidity: solidity / dracula: dracula
 
-syntax_highlighter: prismjs
-prismjs:
-  preprocess: true
-  line_number: true
-  tab_replace: ''
+# syntax_highlighter: prismjs
+# prismjs:
+#   preprocess: true
+#   line_number: true
+#   tab_replace: ''
 
 # 图片灯箱
 # image lightbox

@@ -2,8 +2,92 @@
 title: SCAU数据结构历年编程题
 categories: 
     - 数据结构
+tags:
+    - 数据结构
 cover: "https://raw.githubusercontent.com/acg7878/hexo_picture/master/blog/SCAU数据结构历年编程题/2024-06-27.jpg"
 ---
+## 2022
+
+### 第一题
+
+在链表存储结构上设计实现**直接插入排序**算法。
+
+链表存储结构如下：
+
+```c
+typedef struct LNode {
+    int data;           // 结点的数据域
+    struct LNode *next; // 结点的指针域
+} LNode, LinkList;
+```
+
+统一使用函数名：`void straightinsertsort(LinkList  &L)`
+
+**答案：**
+
+```c
+void InsertSort(LinkedList head) {
+    if (head->next == NULL) // 若链表为空，则返回
+        return;
+    LNode *sorted = head->next; // 表示已排序链表，指向链表第一个元素
+    LNode *curr = sorted->next; // 表示待排元素
+    while (curr != NULL) {
+        if (sorted->data <=
+            curr->data) { // 若已排最后一个元素元素小于待排元素，则不需要排序
+            sorted = sorted->next;
+        } else {
+            LNode *prev = head; // 头结点
+            while (prev->next->data <=
+                   curr->data) { // 从头结点开始遍历，找到小于待排元素的结点
+                prev = prev->next;
+            } // while
+            sorted->next = curr->next; // 插入待排结点
+            curr->next = prev->next;
+            prev->next = curr;
+        } // else
+        curr = sorted->next;
+    } // while
+    return head;
+} // void
+```
+
+
+
+###  第二题
+
+假设`二叉排序树`采用二叉链表存储结构存储，设计一个算法，求出二叉排序树某个节点node的双亲结点
+
+```c
+typedef struct BSNode { // 二叉链表定义
+    int key;
+    struct BiNode *lchild, *rchild;
+} BSTNode, *BSTree;
+```
+
+统一使用函数名： `BSTNode * Parent(BSTNode * node)`
+
+**答案：**
+
+```C
+BSTNode *Parent(BSTNode *node, BSTree T) {
+    TreeNode *p = T; // 先创建指针p使其指向根节点root
+    if (node == T) {
+        return NULL;
+    } else {
+        while (p->lchild != node && p->rchild != node) {
+            if (node->key < p->key) {
+                p = p->lchild;
+            } else if (node->key > p->key) {
+                p = p->rchild;
+            }
+        }
+        return p; 
+    }
+}
+```
+
+
+
 ## 2016
 
 ### 第二题

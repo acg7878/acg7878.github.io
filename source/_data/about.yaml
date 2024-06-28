@@ -13,7 +13,7 @@ title: 关于本站
 
 contentinfo: # 顶部个人信息展示
   sup: 你好，很高兴认识你👋
-  name: 我叫逆蝶 # 名称
+  name: 我叫DRink # 名称
   title: 是一个废物学生 # 介绍
   tip: 追求
   slogan: 源于<br>热爱而去创造
@@ -56,7 +56,7 @@ careers:
     - school: '行政管理'
       major: '学习'
       color: '#357ef5'
-  image: https://7.isyangs.cn/1/65eb2d10ba24d-1.png
+  image: https://raw.githubusercontent.com/acg7878/hexo_picture/master/blog/about/careers.avif
 
 personalities:
   tips: '性格'
@@ -75,10 +75,10 @@ motto:
   prefix: 破釜沉舟，
   content: 砥砺前行。
 expertise:
-  title: 特长
-  prefix: 数学、物理、化学
-  specialist: 专家
-  content: 学习能力
+  title: 特点
+  prefix: 摆摆摆摆摆烂
+  specialist: 人
+  content: 睡觉能力
   level: MAX
 
 game1:
