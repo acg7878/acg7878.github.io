@@ -43,17 +43,7 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
-highlight:
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
-prismjs:
-  preprocess: true
-  line_number: true
-  tab_replace: ''
+
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -144,6 +134,5 @@ markdown:
     enable: true
     per_page: true # 是否在每页都加载 / Whether to load on each page
     copytex: true # 是否开启复制公式 / Whether to enable copy formula
-
 
 

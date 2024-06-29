@@ -663,13 +663,12 @@ highlight:
   theme: mac # default: 默认 / mac : apple terminal
   # 代码配色
   # Code color
-  color: default # default: 默认  / solidity: solidity / dracula: dracula
-
-# syntax_highlighter: prismjs
-# prismjs:
-#   preprocess: true
-#   line_number: true
-#   tab_replace: ''
+  color: vscode # default: 默认  / solidity: solidity / dracula: dracula
+  syntax_highlighter: prismjs
+  prismjs:
+    preprocess: true
+    line_number: true
+    tab_replace: ''
 
 # 图片灯箱
 # image lightbox
@@ -993,7 +992,4 @@ CDN:
     # swiper_js:
     # busuanzi_js:
     # snackbar_js:
-
-
-
 
