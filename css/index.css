@@ -8119,21 +8119,21 @@ figure.highlight .emphasis {
 [data-theme=dark] figure.highlight .attr,
 [data-theme=dark] figure.highlight .variable,
 [data-theme=dark] figure.highlight .property {
-  color: #569cd6;
+  color: #d74bde;
 }
 [data-theme=dark] figure.highlight .number {
-  color: #b5cea8;
+  color: #8da1a0;
 }
 [data-theme=dark] figure.highlight .string {
-  color: #ce9178;
+  color: #5b876d;
 }
 [data-theme=dark] figure.highlight .built_in,
 [data-theme=dark] figure.highlight .title,
 [data-theme=dark] figure.highlight .params {
-  color: #dcdcaa;
+  color: #d74bde;
 }
 [data-theme=dark] figure.highlight .emphasis {
-  color: #6a9955;
+  color: #ba9c23;
 }
 figure pre {
   margin: 0;
