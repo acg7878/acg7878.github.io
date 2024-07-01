@@ -4,7 +4,7 @@ categories:
     - 数据结构
 tags:
     - 数据结构
-cover: "https://raw.githubusercontent.com/acg7878/hexo_picture/master/blog/SCAU数据结构历年编程题/2024-06-27.jpg"
+cover: "https://cdn.jsdelivr.net/gh/acg7878/hexo_picture@master/blog/SCAU%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%8E%86%E5%B9%B4%E7%BC%96%E7%A8%8B%E9%A2%98/2024-06-27.jpg"
 ---
 ## 2022
 

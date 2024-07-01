@@ -7,7 +7,7 @@ authorinfo:
     - '脚踏实地行动派 🏃'
     - '团队小组发动机 🧱'
 
-  image: 'https://raw.githubusercontent.com/acg7878/hexo_picture/master/blog/about/touxiang.jpg'
+  image: 'https://cdn.jsdelivr.net/gh/acg7878/hexo_picture@master/blog/about/touxiang.jpg'
 
 title: 关于本站
 
@@ -56,14 +56,14 @@ careers:
     - school: '行政管理'
       major: '学习'
       color: '#357ef5'
-  image: https://raw.githubusercontent.com/acg7878/hexo_picture/master/blog/about/careers.avif
+  image: https://cdn.jsdelivr.net/gh/acg7878/hexo_picture@master/blog/about/careers.avif
 
 personalities:
   tips: '性格'
   title: '提倡者'
   color: '#56a178'
   type: 'INFJ-T'
-  image: 'https://raw.githubusercontent.com/acg7878/hexo_picture/master/blog/about/INFJ.png'
+  image: 'https://cdn.jsdelivr.net/gh/acg7878/hexo_picture@master/blog/about/INFJ.png'
   link: 'https://www.16personalities.com/'
   linkText: '16personalities'
   typeLink: 'https://www.16personalities.com/ch/infj-人格'
@@ -83,7 +83,7 @@ expertise:
 
 game1:
   title: '爱好游戏'
-  img: https://raw.githubusercontent.com/acg7878/hexo_picture/master/blog/about/%E8%89%BE%E5%B0%94%E7%99%BB%E6%B3%95%E7%8E%AF.png
+  img: https://cdn.jsdelivr.net/gh/acg7878/hexo_picture@master/blog/about/%E8%89%BE%E5%B0%94%E7%99%BB%E6%B3%95%E7%8E%AF.png
   icon: 'fas fa-gamepad'
   subtitle: '艾尔登法环'
   tips_left: 剑士
@@ -91,7 +91,7 @@ game1:
 
 game2:
   title: '爱好游戏'
-  img: https://raw.githubusercontent.com/acg7878/hexo_picture/master/blog/about/zhilang.jpg
+  img: https://cdn.jsdelivr.net/gh/acg7878/hexo_picture@master/blog/about/zhilang.jpg
   subtitle: '只狼：影逝二度'
   icon: 'fas fa-dice-d20'
   tips_right: 'SEKIRO'
