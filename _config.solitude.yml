@@ -193,7 +193,7 @@ aside:
       # 表情图片链接
       # Emoticon image link
       # tip: 26x26 size
-      sticker: https://7.isyangs.cn/34/65f2e4e0423cc-34.png # 不填不显示
+      sticker: https://hexopicture.oss-cn-guangzhou.aliyuncs.com/blog/about/emoji.png # 不填不显示
     # 点击作者头像跳转链接
     # Click the author's avatar to jump link
     url: /about/
