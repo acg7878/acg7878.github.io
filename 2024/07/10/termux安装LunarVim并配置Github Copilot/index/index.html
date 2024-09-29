@@ -134,6 +134,8 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.local/share/lunarvim/lvim/utils/installer</span><br><span class="line">nvim install_bin.sh</span><br></pre></td></tr></table></figure>
 <p>将脚本开头修改为：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#原来是/usr/bin/env bash</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#!/data/data/com.termux/files/usr/bin/env bash</span></span><br></pre></td></tr></table></figure>
+<p><strong>注意</strong>：</p>
+<p>在云服务器上配置lunarvim的时候从snap安装的nvim会出问题，从源码编译安装后配置成功了，具体原因未知</p>
 <h2 id="二、配置篇"><a class="headerlink" href="#二、配置篇"></a>二、配置篇</h2>
 <p>修改LunarVim的配置文件，可以通过<code>lvim</code>再点击<code>c</code>键进行调出</p>
 <figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">lvim.plugins = &#123;</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="string">&quot;github/copilot.vim&quot;</span></span><br><span class="line">	&#125;,</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">-- 安装copilot</span></span><br></pre></td></tr></table></figure>
