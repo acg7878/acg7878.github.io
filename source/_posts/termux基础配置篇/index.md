@@ -6,6 +6,7 @@ categories:
     - git
 tags:    
     - Linux
+    - 配置
 cover: "https://hexopicture.oss-cn-guangzhou.aliyuncs.com/blog/termux%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%E7%AF%87/termux.png"
 ---
 termux出问题重置了，很多配置都忘记了，于是进行一下记录防止之后忘记。

@@ -77,6 +77,10 @@ nvim install_bin.sh
 
 
 
+**注意**：
+
+在云服务器上配置lunarvim的时候从snap安装的nvim会出问题，从源码编译安装后配置成功了，具体原因未知
+
 ## 二、配置篇
 
 修改LunarVim的配置文件，可以通过`lvim`再点击`c`键进行调出
