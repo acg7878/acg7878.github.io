@@ -37,7 +37,23 @@ C]", line=-1
 dofile(vim..fn.sstdpath("config") .. "/my_plugins.lua")
 ```
 
-成功实现分离，
+成功实现分离。
+
+**2024.10.7补充**：
+
+使用 require 函数加载指定模块的文件时，可能提示找不到对应的文件，原因在于 Lua 有一个默认的查找路径。通过 package.path 和 package.cpath 查找路径。
+
+>package.cpath:代表默认的 so 库的查找路径。
+>package.path：代表默认的 lua 文件的查找路径。
+>
+>如果通过 require 函数加载指定的模块文件时，提示找不到对应的文件，则通过设置 package.path 路径即可
+
+```lua
+package.path = package.path..";/home/acg7878/.config/lvim/?.lua"
+require("my_plugins")
+-- 上述代码表示将 package.path 的路径追加上 「/home/acg7878/.config/lvim/」 路径下的所有 lua 文件
+```
+
 
 另外注：
 
