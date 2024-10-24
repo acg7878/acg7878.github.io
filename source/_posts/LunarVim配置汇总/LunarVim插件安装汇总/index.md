@@ -1,5 +1,5 @@
 ---
-title: LunarVim配置汇总
+title: LunarVim插件安装汇总
 date: 2024-09-17 18:43:23
 categories: 
     - termux
@@ -11,7 +11,7 @@ cover: "https://hexopicture.oss-cn-guangzhou.aliyuncs.com/blog/LunarVim%E9%85%8D
 
   
 
-本篇是对Lunar一些插件安装的记录。
+本篇是对LunarVim一些插件安装的记录。
 
 ## 零、前言
 
@@ -97,3 +97,38 @@ lvim.plugins = {
 ```
 
 需要在其`app`文件夹下进行`yarn install`，然后就可以愉快地进行markdown撰写了
+
+
+## 二、leetcode.nvim
+Github:[leetcode.nvim](https://github.com/kawre/leetcode.nvim)
+
+```lua
+-- 安装参数
+{
+    "kawre/leetcode.nvim",
+    build = ":TSUpdate html",
+    dependencies = {
+        "nvim-telescope/telescope.nvim",
+        "nvim-lua/plenary.nvim", -- required by telescope
+        "MunifTanjim/nui.nvim",
+
+        -- optional
+        "nvim-treesitter/nvim-treesitter",
+        "rcarriga/nvim-notify",
+        "nvim-tree/nvim-web-devicons",
+    },
+    opts = {
+        -- configuration goes here
+        cn = {enabled = true} 
+        --由于插件默认使用的是leetcode的美国服务器.com，所以需要修改配置
+    },
+}
+```
+在正常的Linux系统上到此便结束了，但是如果使用的是termux，由于其特殊性，路径设置与常规的Linux不同，需要修改一下环境变量以支持插件依赖`plenary.nvim`
+
+```lua
+-- 为.zshrc添加如下
+export XDG_RUNTIME_DIR = "$PREFIX/tmp/"
+```
+
+致此插件安装结束
