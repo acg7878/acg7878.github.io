@@ -88,7 +88,17 @@ source /data/data/com.termux/files/usr/share/autojump/autojump.zsh
 
 然后再`source ~/.zshrc`即可
 
+## 四、XDG
+>XDG 是 "X Desktop Group" 的缩写，后来更名为 Freedesktop.org。XDG 主要涉及 Linux 和类 Unix 操作系统的桌面环境标准与规范。它定义了一系列标准，以便不同桌面环境、窗口管理器和应用程序能够在共享资源、配置文件和行为上保持一致。
 
+XDG存在基本目录规范,这是XDG的一个标准，它定义了一些环境变量，用于指定用户配置文件、数据文件、缓存文件等应该存储的位置。
 
+常见的环境变量如下：
+- `XDG_CONFIG_HOME`：存储用户的配置信息，默认路径为 **~/.config/**。
+- `XDG_DATA_HOME`：存储用户特定的数据文件，默认路径为 **~/.local/share/**。
+- `XDG_CACHE_HOME`：存储用户的缓存文件，默认路径为 **~/.cache/**。
+- `XDG_RUNTIME_DIR`：存储运行时数据，如进程通信的临时文件，通常为系统提供的一个目录。
 
+为什么在这里提及这个呢，因为termux的路径有点不一样，也许在安装插件啊配置环境啊会报错，也许设置一下这几个环境变量能拯救。
+PS：termux有环境变量`PREFIX`，路径为 **/data/data/com.termux/files/usr**
 
